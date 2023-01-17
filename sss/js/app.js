@@ -1321,10 +1321,10 @@
         modules_flsModules.select = new SelectConstructor({});
         var datepicker_min = __webpack_require__(448);
         const picker = datepicker_min("[data-datepicker]", {
-            customDays: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
-            customMonths: [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
-            overlayButton: "Применить",
-            overlayPlaceholder: "Год (4 цифры)",
+            customDays: [ "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su" ],
+            customMonths: [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+            overlayButton: "Apply",
+            overlayPlaceholder: "Year (4 numbers)",
             startDay: 1,
             formatter: (input, date, instance) => {
                 const value = date.toLocaleDateString();
