@@ -877,7 +877,9 @@ body {
 }
 
 .a {
-  display: block !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .sun__content {
