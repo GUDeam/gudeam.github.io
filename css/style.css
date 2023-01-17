@@ -1058,7 +1058,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  gap: 15px !important;
 }
 
 .swiper-vertical .swiper-wrapper {
@@ -1380,7 +1379,7 @@ body {
   .header__item-text {
     display: none;
   }
-
+.swiper-wrapper{gap:15px!important }
   .header__search {
     display: none;
   }
