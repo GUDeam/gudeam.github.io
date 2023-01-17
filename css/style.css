@@ -1576,6 +1576,7 @@ body {
         -ms-flex: 0 0 45%;
             flex: 0 0 45%;
     padding: 8px;
+	  gap: 2px;
   }
 
   .wins__item {
