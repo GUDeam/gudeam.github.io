@@ -689,6 +689,7 @@ body {
   padding: 24px;
   cursor: pointer;
   display: -webkit-box;
+	gap: 10px;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
