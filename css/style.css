@@ -876,11 +876,7 @@ body {
   text-decoration: underline;
 }
 
-.a {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
+
 
 .sun__content {
   background: #131420;
@@ -1658,7 +1654,11 @@ body {
     }
 }
 }
-
+.a {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
 @media (any-hover: hover) {
   .select__option:hover {
     background: #d9d9d9;
