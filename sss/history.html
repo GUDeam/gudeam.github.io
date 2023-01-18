@@ -100,122 +100,128 @@
 									<li class="page__nav-item"><a href="#" class="page__nav-link">Balance</a></li>
 								</div>
 								<div class="page__slide swiper-slide">
-									<li class="page__nav-item"><a href="#" class="page__nav-link page__nav-active">Deposit</a></li>
+									<li class="page__nav-item"><a href="#" class="page__nav-link">Deposit</a></li>
 								</div>
 								<div class="page__slide swiper-slide">
 									<li class="page__nav-item"><a href="#" class="page__nav-link">Withdrawal</a></li>
 								</div>
 								<div class="page__slide swiper-slide">
-									<li class="page__nav-item"><a href="#" class="page__nav-link wrap">Transaction History</a></li>
+									<li class="page__nav-item"><a href="#" class="page__nav-link wrap page__nav-active">Transaction History</a></li>
 								</div>
 							</div>
 						</div>
 					</ul>
 				</nav>
-				<div class="pay__main">
-					<div class="pay__content">
-						<p class="pay__title">Deposit</p>
-						<div class="pay__flex">
-							<div class="pay__item">
-								<div class="pay__item-flex">
-									<p class="pay__bal">Balance</p>
-									<p class="pay__sum">0 <span>USD</span></p>
-								</div>
-								<div class="pay__methods">
-									<input type="radio" name="method" id="method1" class="pay__method">
-									<label for="method1" class="pay__block">
-										<img src="img/visa.svg" alt="Visa" class="pay__img">
-									</label>
-									<input type="radio" name="method" id="method2" class="pay__method">
-									<label for="method2" class="pay__block">
-										<img src="img/net.svg" alt="Neteller" class="pay__img">
-									</label>
-									<input type="radio" name="method" id="method3" class="pay__method">
-									<label for="method3" class="pay__block">
-										<img src="img/net.svg" alt="Neteller" class="pay__img">
-									</label>
-									<input type="radio" name="method" id="method4" class="pay__method">
-									<label for="method4" class="pay__block">
-										<img src="img/net.svg" alt="Neteller" class="pay__img">
-									</label>
+				<div class="hist__main">
+					<div class="hist__content">
+						<div class="hist__title">Transaction History</div>
+						<div class="hist__table">
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
 								</div>
 							</div>
-							<div class="pay__item">
-								<div class="pay__item-flex" style="border: none;">
-									<p class="pay__item-title">Credit card</p>
-									<div class="pay__item-right">
-										<img src="img/ver__1.svg" alt="Verified" class="pay__ver">
-										<img src="img/ver__2.svg" alt="Verified" class="pay__ver">
-									</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status expected">Expected</p>
 								</div>
-								<div class="pay__item-desc">Deposit sum <span>Instant Min:20*Max: 4,000</span></div>
-								<div class="pay__tabs">
-									<input type="radio" checked name="price" id="price1">
-									<label for="price1">25</label>
-									<input type="radio" name="price" id="price2">
-									<label for="price2">50</label>
-									<input type="radio" name="price" id="price3">
-									<label for="price3">100</label>
-									<input type="radio" name="price" id="price4">
-									<label for="price4">200</label>
-									<input type="radio" name="price" id="price5">
-									<label for="price5" class="d">300</label>
-								</div>
-								<div class="pay__inputs">
-									<input type="text" name="sum" id="" class="pay__inp" placeholder="50">
-									<input type="text" name="card" id="" class="pay__inp" placeholder="Card number">
-									<input type="text" name="name" id="" class="pay__inp" placeholder="Name on card">
-									<input type="text" name="date" id="" class="pay__inp" placeholder="Expiry date">
-									<input type="text" name="cvv" id="" class="pay__inp" placeholder="CVV">
-								</div>
-								<div class="pay__quest">
-									<p class="pay__quest-title">Available Bonuses</p>
-									<div class="pay__quest-flex">
-										<p class="pay__quest-use">Use bonuses</p>
-										<input type="checkbox" checked id="highload3" name="highload3">
-										<label for="highload3" class="lb3"></label>
-									</div>
-								</div>
-								<div class="pay__promo">
-									<input type="text" style="margin: 0;" name="promo" id="promo" class="pay__inp" placeholder="Promocode (optional)">
-									<a href="#" class="pay__promo-btn">Add</a>
-								</div>
-								<div class="bon__item">
-									<input id="bon" type="radio" value="1">
-									<label for="bon" class="bons">
-										<div class="bon__flex">
-											<p class="bon__title">Casino</p>
-											<div class="bon__check"><span></span></div>
-										</div>
-										<div class="bon__content">
-											<div class="bon__f">
-												<p class="bon__content-title">First Welcome Bonus</p>
-												<p class="bon__content-pirc">100%</p>
-												<p class="bon__content-text">
-													<span>Min deposit sum 20 USD</span>
-													<span>Wager 50x</span>
-													<span>Max bonus 240 USD</span>
-												</p>
-											</div>
-											<img src="img/bon__line.svg" alt="Line" class="bon__lin">
-											<div class="bon_f">
-												<p class="bon__content-title">20 FS All Lucky Clover 5</p>
-												<p class="bon__content-pirc">20 <span>Freespins</span></p>
-												<p class="bon__content-text">
-													<span>Min deposit sum 20 USD</span>
-													<span>Games: All Lucky Clovers 5</span>
-												</p>
-											</div>
-										</div>
-									</label>
-								</div>
-								<a href="#" class="pay__b">Deposit 50 USD<span>+20 USD casino bonus</span></a>
-								<div class="pay__pol">Please, keep in mind that 3-D Secure code can be requested several times in order to process the deposit transaction.</div>
 							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status canceled">Canceled</p>
+								</div>
+							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
+								</div>
+							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
+								</div>
+							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
+								</div>
+							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
+								</div>
+							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
+								</div>
+							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
+								</div>
+							</div>
+							<div class="hist__block">
+								<p class="hist__date">11 Aug 2022 12:20</p>
+								<p class="hist__method">Withdraw</p>
+								<p class="hist__sum">$26</p>
+								<div class="hist__flex">
+									<p class="hist__card">Visa</p>
+									<p class="hist__status success">Success</p>
+								</div>
+							</div>
+						</div>
+						<div class="hist__pages">
+							<a href="" class="hist__link"><img src="img/arrow__page.svg" alt="Arrow" class="hist__img"></a>
+							<a href="" class="hist__link">Next</a>
+							<a href="" class="hist__link">1</a>
+							<a href="" class="hist__link">...</a>
+							<a href="" class="hist__link disp">4</a>
+							<a href="" class="hist__link hist__link-active">5</a>
+							<a href="" class="hist__link disp">6</a>
+							<a href="" class="hist__link">...</a>
+							<a href="" class="hist__link">12</a>
+							<a href="" class="hist__link">Prev</a>
+							<a href="" class="hist__link"><img src="img/arrow__page-l.svg" alt="Arrow" class="hist__img"></a>
 						</div>
 					</div>
 				</div>
-			</div>
 		</main>
 		<input type="hidden" name="" data-datepicker>
 	</div>
