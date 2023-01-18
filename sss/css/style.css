@@ -2765,6 +2765,11 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.pay__wit {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+
 .pay__tabs {
   display: -webkit-box;
   display: -ms-flexbox;
