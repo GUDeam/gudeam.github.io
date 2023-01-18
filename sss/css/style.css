@@ -2109,6 +2109,45 @@ body {
   gap: 20px;
 }
 
+.ver__success {
+  background: #1B1C2D;
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 310px;
+}
+
+.ver__success-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ver__success-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.ver__success-number {
+  font-size: 18px;
+}
+
+.ver__success-info {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ver__success-del {
+  cursor: pointer;
+}
+
 .sec__main {
   padding: 20px 36px;
 }

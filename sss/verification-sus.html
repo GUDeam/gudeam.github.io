@@ -95,78 +95,50 @@
 				<nav>
 					<ul class="page__nav">
 						<li class="page__nav-item"><a href="#" class="page__nav-link">General</a></li>
-						<li class="page__nav-item"><a href="#" class="page__nav-link">Verification</a></li>
-						<li class="page__nav-item"><a href="#" class="page__nav-link page__nav-active">Security</a></li>
+						<li class="page__nav-item"><a href="#" class="page__nav-link page__nav-active">Verification</a></li>
+						<li class="page__nav-item"><a href="#" class="page__nav-link">Security</a></li>
 					</ul>
 				</nav>
-				<div class="sec__main">
-					<div class="sec__main-content">
-						<div class="sec__main-title">Security ✈</div>
-						<div class="sec__content">
-							<form action="" class="sec__form">
-								<p class="sec__form-title">Two-Factiry Authentication</p>
-								<div class="sec__form-flex">
-									<picture><source srcset="img/qr.webp" type="image/webp"><img src="img/qr.png" alt="QR" class="sec__form-img"></picture>
-									<p class="sec__form-text">Install a code-generating app such as Google Authenticator or Authy on your phone. Scan the QR code. Enter the received code below.</p>
-								</div>
-								<input type="text" class="sec__inp" placeholder="Type it here">
-							</form>
-							<form action="" class="sec__form">
-								<p class="sec__form-title">Password Change</p>
-								<div class="sec__form-flex">
-									<div class="sec__form-group">
-										<p class="sec__form-label">Old Password</p>
-										<input type="password" class="sec__inp" placeholder="*******" required>
+				<div class="ver__main">
+					<div class="ver__main-content">
+						<div class="ver__main-title">Verification ✈</div>
+						<form action="" class="ver__form">
+							<div class="ver__flex">
+								<div class="ver__flex-item">
+									<div class="ver__flex-flex">
+										<p class="ver__item-title">Identity, Address, SOW/SOF</p>
+										<p class="ver__item-desc">Passport, driver's license, or other official document replacing them.</p>
 									</div>
-									<div class="sec__form-group">
-										<p class="sec__form-label">New Password</p>
-										<input type="password" class="sec__inp" placeholder="*******" required>
-										<button class="form__viewpass" type="button"> </button>
+									<div class="ver__load">
+										<img src="img/load.svg" alt="Load" class="ver__load-img">
+										<p class="ver__load-desc">Documents verification. You will be forwarded to <a href="#" class="ver__load-link">HooYu</a> service</p>
 									</div>
-									<div class="sec__form-group">
-										<p class="sec__form-label">Password confirm </p>
-										<input type="password" class="sec__inp" placeholder="*******" required>
-										<button class="form__viewpass" type="button"> </button>
+								</div>
+								<div class="ver__flex-item">
+									<div class="ver__flex-flex">
+										<p class="ver__item-title">Payment</p>
+										<p class="ver__item-desc">Screenshot or photo from online bank, bank statement, Skrill page, etc. showing the deposit</p>
 									</div>
-									<input type="submit" value="Verify" class="sec__btn">
+									<div class="ver__load">
+										<img src="img/load.svg" alt="Load" class="ver__load-img">
+										<p class="ver__load-desc">Documents verification. You will be forwarded to <a href="#" class="ver__load-link">HooYu</a> service</p>
+									</div>
 								</div>
-							</form>
-						</div>
-						<div class="sec__table">
-							<p class="sec__table-title">Session History</p>
-							<div class="sec__table-block">
-								<div class="sec__table-flex">
-									<p class="sec__table-ip">159.224.117.41</p>
-									<p class="sec__table-from">UA</p>
-								</div>
-								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
-								<p class="sec__table-date">29 Dec 2022, 11:43</p>
-								<p class="sec__table-status">Current</p>
 							</div>
-							<div class="sec__table-block">
-								<div class="sec__table-flex">
-									<p class="sec__table-ip">159.224.117.41</p>
-									<p class="sec__table-from">UA</p>
+							<div class="ver__main-title">Phone Verification ✈</div>
+							<div class="ver__success">
+								<p class="ver__success-title">Phone Number</p>
+								<div class="ver__success-flex">
+									<div class="ver__success-number">+380953****91</div>
+									<img src="img/del.svg" alt="Delete" class="ver__success-del">
 								</div>
-								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
-								<p class="sec__table-date">29 Dec 2022, 11:43</p>
-								<p class="sec__table-status">Closed <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-info"></p>
+								<div class="ver__success-info">Phone successfully added.</div>
 							</div>
-							<div class="sec__table-block">
-								<div class="sec__table-flex">
-									<p class="sec__table-ip">159.224.117.41</p>
-									<p class="sec__table-from">UA</p>
-								</div>
-								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
-								<p class="sec__table-date">29 Dec 2022, 11:43</p>
-								<p class="sec__table-status">Closed <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-info"></p>
-							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</main>
-		<input type="hidden" name="" data-datepicker>
 	</div>
 	<!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
