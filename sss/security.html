@@ -94,83 +94,79 @@
 				</div>
 				<nav>
 					<ul class="page__nav">
-						<li class="page__nav-item"><a href="#" class="page__nav-link page__nav-active">General</a></li>
+						<li class="page__nav-item"><a href="#" class="page__nav-link">General</a></li>
 						<li class="page__nav-item"><a href="#" class="page__nav-link">Verification</a></li>
-						<li class="page__nav-item"><a href="#" class="page__nav-link">Security</a></li>
+						<li class="page__nav-item"><a href="#" class="page__nav-link page__nav-active">Security</a></li>
 					</ul>
 				</nav>
-				<div class="page__main">
-					<div class="page__main-content">
-						<div class="page__main-title">Personal Information ✈</div>
-						<form action="" class="page__form">
-							<div class="page__form-item">
-								<div class="page__form-group">
-									<label for="email" class="page__label">Email</label>
-									<input type="email" name="email" id="email" class="page__form-inp" placeholder="email@gmail.com">
+				<div class="sec__main">
+					<div class="sec__main-content">
+						<div class="sec__main-title">Security ✈</div>
+						<div class="sec__content">
+							<form action="" class="sec__form">
+								<p class="sec__form-title">Two-Factiry Authentication</p>
+								<div class="sec__form-flex">
+									<picture><source srcset="img/qr.webp" type="image/webp"><img src="img/qr.png" alt="QR" class="sec__form-img"></picture>
+									<p class="sec__form-text">Install a code-generating app such as Google Authenticator or Authy on your phone. Scan the QR code. Enter the received code below.</p>
 								</div>
-								<div class="page__form-group">
-									<label for="first" class="page__label">First name</label>
-									<input type="text" name="first" id="first" class="page__form-inp" placeholder="Anastasiia">
+								<input type="text" class="sec__inp" placeholder="Type it here">
+							</form>
+							<form action="" class="sec__form">
+								<p class="sec__form-title">Password Change</p>
+								<div class="sec__form-flex">
+									<div class="sec__form-group">
+										<p class="sec__form-label">Old Password</p>
+										<input type="password" class="sec__inp" placeholder="*******" required>
+									</div>
+									<div class="sec__form-group">
+										<p class="sec__form-label">New Password</p>
+										<input type="password" class="sec__inp" placeholder="*******" required>
+										<button class="form__viewpass" type="button"> </button>
+									</div>
+									<div class="sec__form-group">
+										<p class="sec__form-label">Password confirm </p>
+										<input type="password" class="sec__inp" placeholder="*******" required>
+										<button class="form__viewpass" type="button"> </button>
+									</div>
+									<input type="submit" value="Verify" class="sec__btn">
 								</div>
-								<div class="page__form-group">
-									<label for="last" class="page__label">Last name</label>
-									<input type="text" name="last" id="last" class="page__form-inp" placeholder="Anastasiia">
+							</form>
+						</div>
+						<div class="sec__table">
+							<p class="sec__table-title">Session History</p>
+							<div class="sec__table-block">
+								<div class="sec__table-flex">
+									<p class="sec__table-ip">159.224.117.41</p>
+									<p class="sec__table-from">UA</p>
 								</div>
-								<div class="page__form-group">
-									<label for="date" class="page__label">Date of Birth</label>
-									<input type="text" data-datepicker name="date" id="date" class="page__form-inp" placeholder="">
-								</div>
-								<div class="page__form-group">
-									<label for="gender" class="page__label">Gender</label>
-									<select name="gender" id="gender" class="page__form-inp" data-class-modif="page__form-inp">
-										<option value="1" selected>Male</option>
-										<option value="2">Female</option>
-										<option value="3">Other</option>
-									</select>
-								</div>
-								<input type="submit" value="Save changes" class="page__form-btn" data-da=".data-da, 992, 1">
+								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
+								<p class="sec__table-date">29 Dec 2022, 11:43</p>
+								<p class="sec__table-status">Current</p>
 							</div>
-							<div class="page__form-item">
-								<div class="page__form-group">
-									<label for="country" class="page__label">Country</label>
-									<input type="text" name="country" id="country" class="page__form-inp" placeholder="Ukraine">
+							<div class="sec__table-block">
+								<div class="sec__table-flex">
+									<p class="sec__table-ip">159.224.117.41</p>
+									<p class="sec__table-from">UA</p>
 								</div>
-								<div class="page__form-group">
-									<label for="city" class="page__label">City</label>
-									<input type="text" name="city" id="city" class="page__form-inp" placeholder="Kharkiv">
-								</div>
-								<div class="page__form-group">
-									<label for="adreess" class="page__label">Adreess</label>
-									<input type="text" name="adreess" id="adreess" class="page__form-inp" placeholder="Anastasiia">
-								</div>
-								<div class="page__form-group">
-									<label for="portal" class="page__label">Portal Code</label>
-									<input type="text" name="portal" id="portal" class="page__form-inp" placeholder="">
-								</div>
-								<div class="page__form-group">
-									<label for="phone" class="page__label">Mobile Phone</label>
-									<input type="tel" name="phone" id="phone" class="page__form-inp" placeholder="+380">
-								</div>
+								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
+								<p class="sec__table-date">29 Dec 2022, 11:43</p>
+								<p class="sec__table-status">Closed <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-info"></p>
 							</div>
-							<div class="page__form-item">
-								<div class="page__form-sub">Subscriptions</div>
-								<div class="page__form-group gr">
-									<p class="page__check">Send promos by e-mail</p>
-									<input type="checkbox" checked id="highload1" name="highload1">
-									<label for="highload1" class="lb1"></label>
+							<div class="sec__table-block">
+								<div class="sec__table-flex">
+									<p class="sec__table-ip">159.224.117.41</p>
+									<p class="sec__table-from">UA</p>
 								</div>
-								<div class="page__form-group gr">
-									<p class="page__check">Send promos by SMS</p>
-									<input type="checkbox" checked id="highload2" name="highload2">
-									<label for="highload2" class="lb2"></label>
-								</div>
+								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
+								<p class="sec__table-date">29 Dec 2022, 11:43</p>
+								<p class="sec__table-status">Closed <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-info"></p>
 							</div>
-							<div class="data-da"></div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+		<input type="hidden" name="" data-datepicker>
 	</div>
 	<!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
