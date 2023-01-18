@@ -41,8 +41,8 @@
 			</div>
 			<nav>
 				<ul class="page__menu">
-					<li class="page__menu-item"><a href="#" class="page__menu-link page__menu-active"><img src="img/profile__1.svg" alt="Profile" class="page__menu-img"> Profile</a></li>
-					<li class="page__menu-item"><a href="#" class="page__menu-link"><img src="img/profile__2.svg" alt="Profile" class="page__menu-img"> Wallet</a></li>
+					<li class="page__menu-item"><a href="#" class="page__menu-link"><img src="img/profile-des.svg" alt="Profile" class="page__menu-img"> Profile</a></li>
+					<li class="page__menu-item"><a href="#" class="page__menu-link page__menu-active"><img src="img/wallet_active.svg" alt="Profile" class="page__menu-img"> Wallet</a></li>
 					<li class="page__menu-item"><a href="#" class="page__menu-link"><img src="img/profile__3.svg" alt="Profile" class="page__menu-img"> Game history</a></li>
 				</ul>
 			</nav>
@@ -73,8 +73,8 @@
 				</div>
 				<nav>
 					<ul class="page__menu">
-						<li class="page__menu-item"><a href="#" class="page__menu-link page__menu-active"><img src="img/profile__1.svg" alt="Profile" class="page__menu-img"> Profile</a></li>
-						<li class="page__menu-item"><a href="#" class="page__menu-link"><img src="img/profile__2.svg" alt="Profile" class="page__menu-img"> Wallet</a></li>
+						<li class="page__menu-item"><a href="#" class="page__menu-link"><img src="img/profile-des.svg" alt="Profile" class="page__menu-img"> Profile</a></li>
+						<li class="page__menu-item"><a href="#" class="page__menu-link page__menu-active"><img src="img/wallet_active.svg" alt="Profile" class="page__menu-img"> Wallet</a></li>
 						<li class="page__menu-item"><a href="#" class="page__menu-link"><img src="img/profile__3.svg" alt="Profile" class="page__menu-img"> Game history</a></li>
 					</ul>
 				</nav>
@@ -94,77 +94,55 @@
 				</div>
 				<nav>
 					<ul class="page__nav">
-						<li class="page__nav-item"><a href="#" class="page__nav-link">General</a></li>
-						<li class="page__nav-item"><a href="#" class="page__nav-link">Verification</a></li>
-						<li class="page__nav-item"><a href="#" class="page__nav-link page__nav-active">Security</a></li>
+						<div class="page__slider sli">
+							<div class="page__wrapper swiper-wrapper" style="justify-content: flex-start;">
+								<div class="page__slide swiper-slide">
+									<li class="page__nav-item"><a href="#" class="page__nav-link">Balance</a></li>
+								</div>
+								<div class="page__slide swiper-slide">
+									<li class="page__nav-item"><a href="#" class="page__nav-link">Deposit</a></li>
+								</div>
+								<div class="page__slide swiper-slide">
+									<li class="page__nav-item"><a href="#" class="page__nav-link">Withdrawal</a></li>
+								</div>
+								<div class="page__slide swiper-slide">
+									<li class="page__nav-item"><a href="#" class="page__nav-link">Transaction History</a></li>
+								</div>
+							</div>
+						</div>
 					</ul>
 				</nav>
-				<div class="sec__main">
-					<div class="sec__main-content">
-						<div class="sec__main-title">Security ✈</div>
-						<div class="sec__content">
-							<form action="" class="sec__form">
-								<p class="sec__form-title">Two-Factiry Authentication</p>
-								<div class="sec__form-flex">
-									<picture><source srcset="img/qr.webp" type="image/webp"><img src="img/qr.png" alt="QR" class="sec__form-img"></picture>
-									<p class="sec__form-text">Install a code-generating app such as Google Authenticator or Authy on your phone. Scan the QR code. Enter the received code below.</p>
-								</div>
-								<input type="text" class="sec__inp" placeholder="Type it here">
-							</form>
-							<form action="" class="sec__form">
-								<p class="sec__form-title">Password Change</p>
-								<div class="sec__form-flex">
-									<div class="sec__form-group">
-										<p class="sec__form-label">Old Password</p>
-										<input type="password" class="sec__inp" placeholder="*******" required>
+				<div class="bal__main">
+					<div class="bal__content">
+						<p class="bal__title">Balance 🤑</p>
+						<div class="bal__flex">
+							<div class="options">
+								<div class="options__item">
+									<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+									<label for="o_1" class="options__label"><span class="options__text">Default</span></label>
+									<p class="bal__opt-curr">USD</p>
+									<p class="bal__opt-bal">O $</p>
+									<div class="bal__opt-flex">
+										<div class="bal__opt-bonus">
+											<p class="bal__opt-price">0</p>
+											<p class="bal__opt-text">Withdrawable</p>
+										</div>
+										<img src="img/min-line.svg" alt="Line" class="bal__opt-line">
+										<div class="bal__opt-bonus">
+											<p class="bal__opt-price">0</p>
+											<p class="bal__opt-text">Locked by bonus</p>
+										</div>
 									</div>
-									<div class="sec__form-group">
-										<p class="sec__form-label">New Password</p>
-										<input type="password" class="sec__inp" placeholder="*******" required>
-										<button class="form__viewpass" type="button"> </button>
-									</div>
-									<div class="sec__form-group">
-										<p class="sec__form-label">Password confirm </p>
-										<input type="password" class="sec__inp" placeholder="*******" required>
-										<button class="form__viewpass" type="button"> </button>
-									</div>
-									<input type="submit" value="Verify" class="sec__btn">
+									<a href="#" class="bal__btn">Deposit</a>
 								</div>
-							</form>
-						</div>
-						<div class="sec__table">
-							<p class="sec__table-title">Session History</p>
-							<div class="sec__table-block">
-								<div class="sec__table-flex">
-									<p class="sec__table-ip">159.224.117.41</p>
-									<p class="sec__table-from">UA</p>
+								<div class="options__add">
+									<img src="img/plus.svg" alt="Plus" class="option__plus">
+									<p class="options__add-text">Add new</p>
 								</div>
-								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
-								<p class="sec__table-date">29 Dec 2022, 11:43</p>
-								<p class="sec__table-status">Current</p>
-							</div>
-							<div class="sec__table-block">
-								<div class="sec__table-flex">
-									<p class="sec__table-ip">159.224.117.41</p>
-									<p class="sec__table-from">UA</p>
-								</div>
-								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
-								<p class="sec__table-date">29 Dec 2022, 11:43</p>
-								<p class="sec__table-status">Closed <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-info"></p>
-							</div>
-							<div class="sec__table-block">
-								<div class="sec__table-flex">
-									<p class="sec__table-ip">159.224.117.41</p>
-									<p class="sec__table-from">UA</p>
-								</div>
-								<p class="sec__table-info">Macintosh; Intel Mac OS X 10_15_7 <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-img"></p>
-								<p class="sec__table-date">29 Dec 2022, 11:43</p>
-								<p class="sec__table-status">Closed <img src="img/info.svg" data-tippy-content="Тут пишите причину ошибки" alt="Info" class="sec__table-info"></p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		</main>
 		<input type="hidden" name="" data-datepicker>
 	</div>

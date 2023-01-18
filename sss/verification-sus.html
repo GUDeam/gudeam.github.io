@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230118145025">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230118180846">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -150,54 +150,34 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230118145025"></script>
+	<script src="js/app.min.js?_v=20230118180846"></script>
 	<script>
-		function getTimeRemaining(endtime) {
-			var t = Date.parse(endtime) - Date.parse(new Date());
-			var seconds = Math.floor((t / 1000) % 60);
-			var minutes = Math.floor((t / 1000 / 60) % 60);
-			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-			var days = Math.floor(t / (1000 * 60 * 60 * 24));
-			return {
-				'total': t,
-				'days': days,
-				'hours': hours,
-				'minutes': minutes,
-				'seconds': seconds
-			};
-		}
-
-		function initializeClock(id, endtime) {
-			var clock = document.getElementById(id);
-			var daysSpan = clock.querySelector('.days');
-			var hoursSpan = clock.querySelector('.hours');
-			var minutesSpan = clock.querySelector('.minutes');
-			var secondsSpan = clock.querySelector('.seconds');
-
-			function updateClock() {
-				var t = getTimeRemaining(endtime);
-
-				daysSpan.innerHTML = t.days;
-				hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-				minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-				secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-				if (t.total <= 0) {
-					clearInterval(timeinterval);
-				}
-			}
-
-			updateClock();
-			var timeinterval = setInterval(updateClock, 1000);
-		}
-
-		var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000); // Чисор "4" это количество дней до окончания работы таймера. Можно изменять
-		// var deadline = '2015-12-31';
-		initializeClock('countdown', deadline);
-
 		function menu() {
 			document.querySelector('.menu').classList.toggle('_active');
 		}
+
+
+		var items = document.querySelectorAll('.options__item');
+
+		// [].forEach.call(items, function(item) {
+		//   item.addEventListener('click', function() {
+		//     if (document.querySelector('.options__item').classList.contains('sssss')){
+		//       document.querySelector('.options__item').classList.remove('sssss');
+
+		//     }
+		//     item.classList.add('sssss');
+		//   });
+		// });
+
+		items.forEach((item) => {
+			if (item.classList.contains("sssss")) {
+				item.classList.toggle('sssss');
+			} else {
+				item.addEventListener('click', function() {
+					item.classList.add('sssss');
+				});
+			}
+		})
 	</script>
 </body>
 
