@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230118230221">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230119011005">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,25 +116,29 @@
 					<div class="bal__content">
 						<p class="bal__title">Balance 🤑</p>
 						<div class="bal__flex">
-							<div class="options">
-								<div class="options__item">
-									<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
-									<label for="o_1" class="options__label"><span class="options__text">Default</span></label>
-									<p class="bal__opt-curr">USD</p>
-									<p class="bal__opt-bal">O $</p>
-									<div class="bal__opt-flex">
-										<div class="bal__opt-bonus">
-											<p class="bal__opt-price">0</p>
-											<p class="bal__opt-text">Withdrawable</p>
+							<div class="option">
+								<input id="bal" class="option__input" checked type="radio" value="1" name="option">
+								<label for="bal" class="bal__label">
+									<div class="option__item">
+										<div class="option__title">Default <div class="option__check"><span></span></div>
 										</div>
-										<img src="img/min-line.svg" alt="Line" class="bal__opt-line">
-										<div class="bal__opt-bonus">
-											<p class="bal__opt-price">0</p>
-											<p class="bal__opt-text">Locked by bonus</p>
+										<p class="bal__opt-curr">USD</p>
+										<p class="bal__opt-bal">O $</p>
+										<div class="bal__opt-flex">
+											<div class="bal__opt-bonus">
+												<p class="bal__opt-price">0</p>
+												<p class="bal__opt-text">Withdrawable</p>
+											</div>
+											<img src="img/min-line.svg" alt="Line" class="bal__opt-line">
+											<div class="bal__opt-bonus">
+												<p class="bal__opt-price">0</p>
+												<p class="bal__opt-text">Locked by bonus</p>
+											</div>
 										</div>
+										<a href="#" data-popup="#deposit" class="bal__btn">Deposit</a>
 									</div>
-									<a href="#" class="bal__btn">Deposit</a>
-								</div>
+								</label>
+
 								<div class="options__add">
 									<img src="img/plus.svg" alt="Plus" class="option__plus">
 									<p class="options__add-text">Add new</p>
@@ -146,17 +150,43 @@
 		</main>
 		<input type="hidden" name="" data-datepicker>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="deposit" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+
+				<div class="popup__title">Select a currency to add <button data-close type="button" class="popup__close">+</button></div>
+				<div class="popup__text">
+					<input type="radio" checked name="EUR" id="eur" class="popup__val">
+					<label for="eur">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="usd" class="popup__val">
+					<label for="usd">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="uah" class="popup__val">
+					<label for="uah">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="she" class="popup__val">
+					<label for="she">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="col" class="popup__val">
+					<label for="col">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+				</div>
+				<a href="#" class="popup__btn">Add currency</a>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230118230221"></script>
+	<script src="js/app.min.js?_v=20230119011005"></script>
 	<script>
 		function menu() {
 			document.querySelector('.menu').classList.toggle('_active');

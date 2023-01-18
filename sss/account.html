@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230118230221">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230119011005">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -172,17 +172,43 @@
 			</div>
 		</main>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="deposit" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+
+				<div class="popup__title">Select a currency to add <button data-close type="button" class="popup__close">+</button></div>
+				<div class="popup__text">
+					<input type="radio" checked name="EUR" id="eur" class="popup__val">
+					<label for="eur">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="usd" class="popup__val">
+					<label for="usd">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="uah" class="popup__val">
+					<label for="uah">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="she" class="popup__val">
+					<label for="she">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+					<input type="radio" name="EUR" id="col" class="popup__val">
+					<label for="col">
+						<p class="popup__val-text">EUR</p>
+						<div class="popup__check"><span></span></div>
+					</label>
+				</div>
+				<a href="#" class="popup__btn">Add currency</a>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230118230221"></script>
+	<script src="js/app.min.js?_v=20230119011005"></script>
 	<script>
 		function menu() {
 			document.querySelector('.menu').classList.toggle('_active');
