@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230118023947">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<img src="img/logo.svg" alt="Logotype" class="header__logo">
+					<div class="header__item">
+						<div class="header__icons">
+							<a href="#" class="header__link"><img src="img/telegram.svg" alt="Telegram" class="header__soc"></a>
+							<a href="#" class="header__link"><img src="img/whatsapp.svg" alt="WhatsApp" class="header__soc"></a>
+							<a href="#" class="header__link"><img src="img/mess.svg" alt="Messenger" class="header__soc"></a>
+							<a href="#" class="header__link"><img src="img/viber.svg" alt="Viber" class="header__soc"></a>
+						</div>
+						<div class="header__contact">
+							<a href="tel:+79261921111" class="header__phone">+7 926 192 11 11</a>
+							<a href="mailto:advocat.avg@gmail.com" class="header__email">advocat.avg@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="main">
+				<div class="main__container">
+					<div class="main__content">
+						<div class="main__flex">
+							<p class="main__title">Всем <br>кто уехал</p>
+							<div class="da"></div>
+							<a href="#" class="main__btn" data-popup="#popup">Заказать консультацию</a>
+						</div>
+						<p class="main__desc" data-da=".da, 992, 1">Индивидуальные условия сотрудничества с каждым Клиентом обсудим лично или по телефону</p>
+					</div>
+					<div class="main__info">
+						<div class="main__item">
+							<div class="main__item-title">Решение Ваших миграционных вопросов и легализация Вашего пребывания вне РФ</div>
+							<div class="main__item-desc">Не знаете где поселиться и какие нужны документы, ПОМОЖЕМ!</div>
+						</div>
+						<div class="main__item">
+							<div class="main__item-title">Представление Ваших интересов в судах, службе судебных приставов и любых иных госорганах РФ</div>
+							<div class="main__item-desc">Нужна юридическая помощь, ПОМОЖЕМ!</div>
+						</div>
+						<div class="main__item">
+							<div class="main__item-title">Доверительное управление Вашими активами на территории РФ</div>
+							<div class="main__item-desc">Профессионально и надежно</div>
+						</div>
+						<div class="main__item">
+							<div class="main__item-title">Представительские и консалтинговые услуги в РФ, Европе, Турции и Израиле</div>
+							<!-- <div class="main__item-desc">Не знаете где поселиться и какие нужны документы, ПОМОЖЕМ!</div> -->
+						</div>
+					</div>
+					<img src="img/money.svg" alt="Money" class="main__money">
+				</div>
+				<img src="img/plane.svg" alt="Plane" class="plane">
+				<div class="main__container">
+					<div class="header__icons" style="display: none;padding-bottom: 50px;position: relative;z-index: 99;">
+						<a href="#" class="header__link"><img src="img/telegram.svg" alt="Telegram" class="header__soc"></a>
+						<a href="#" class="header__link"><img src="img/whatsapp.svg" alt="WhatsApp" class="header__soc"></a>
+						<a href="#" class="header__link"><img src="img/mess.svg" alt="Messenger" class="header__soc"></a>
+						<a href="#" class="header__link"><img src="img/viber.svg" alt="Viber" class="header__soc"></a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__title">Оставьте заявку</div>
+				<div class="popup__text">
+					<form action="send.php" method="POST" class="popup__form">
+						<input type="text" name="name" id="name" class="popup__inp" placeholder="Ваш контакт" required>
+						<textarea name="mess" id="mess" cols="30" rows="10" placeholder="Опишите Ваш вопрос или задачу" class="popup__mess"></textarea>
+						<input type="submit" value="Отправить" class="popup__btn">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230118023947"></script>
+</body>
+
+</html>
