@@ -6673,36 +6673,34 @@
                 },
                 on: {}
             });
-            window.onload = function() {
-                if (window.innerHeight <= 768) if (document.querySelector(".sli")) new core(".sli", {
-                    modules: [ Navigation ],
-                    observer: true,
-                    observeParents: true,
-                    slidesPerView: 3,
-                    spaceBetween: 0,
-                    autoHeight: true,
-                    speed: 800,
-                    navigation: {
-                        prevEl: ".swiper-button-prev",
-                        nextEl: ".swiper-button-next"
+            if (document.querySelector(".sli")) new core(".sli", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 4,
+                spaceBetween: 0,
+                autoHeight: true,
+                speed: 800,
+                navigation: {
+                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: "auto",
+                        autoHeight: true
                     },
-                    breakpoints: {
-                        320: {
-                            slidesPerView: 1,
-                            autoHeight: true
-                        },
-                        480: {
-                            slidesPerView: 1,
-                            autoHeight: true
-                        },
-                        768: {
-                            slidesPerView: 3,
-                            autoHeight: true
-                        }
+                    480: {
+                        slidesPerView: 3,
+                        autoHeight: true
                     },
-                    on: {}
-                });
-            };
+                    768: {
+                        slidesPerView: 4,
+                        autoHeight: true
+                    }
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
