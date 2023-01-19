@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230119011005">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230119022353">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -231,8 +231,7 @@
 	</div>
 	<div id="deposit" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
-			<div class="popup__content">
-
+			<div class="popup__content" style="padding: 20px;">
 				<div class="popup__title">Select a currency to add <button data-close type="button" class="popup__close">+</button></div>
 				<div class="popup__text">
 					<input type="radio" checked name="EUR" id="eur" class="popup__val">
@@ -265,7 +264,135 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230119011005"></script>
+
+	<div id="login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Log in <button data-close type="button" class="popup__close">+</button></div>
+				<div class="login__desc">Login to manage your account</div>
+				<div class="login__content">
+					<form action="" class="login__form">
+						<div class="login__group">
+							<label for="em">Email</label>
+							<input type="email" name="email" id="em" class="login__inp" placeholder="email@gmail.com">
+						</div>
+						<div class="login__group">
+							<label for="pa">Password</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<input type="submit" value="Login" class="login__btn">
+						<p class="login__quest">Don’t have an account ? <a href="#" class="login__link">Sign up</a></p>
+						<a href="#" class="login__forgot">Forgot Password ?</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="full" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Greate account <button data-close type="button" class="popup__close">+</button></div>
+				<div class="login__desc">Login to manage your account</div>
+				<div class="login__content">
+					<form action="" class="login__form">
+						<div class="login__group">
+							<label for="em">First name</label>
+							<input type="email" name="email" id="em" class="login__inp" placeholder="email@gmail.com">
+						</div>
+						<div class="login__group">
+							<label for="pa">Last name</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">Date of Birth</label>
+							<input type="text" data-datepicker name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">Gender</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">Country</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">City</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">Adreess</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">Portal Code</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">Gender</label>
+							<select name="form[]" data-class-modif="form">
+								<option value="1" selected>Male</option>
+								<option value="2">Famale</option>
+								<option value="3">Other</option>
+							</select>
+						</div>
+
+						<div style="margin-bottom: 10px;">
+							<input type="checkbox" name="rec" id="rec">
+							<label for="rec">Receive Email Promos</label>
+						</div>
+						<div>
+							<input type="checkbox" name="rec2" id="rec2">
+							<label for="rec2" style="line-height: 20px">I am 18 years old and I accept the Terms and Conditions and Privacy Policy *</label>
+						</div>
+						<div class="buttons">
+							<input type="submit" value="Back" class="login__back">
+							<input type="submit" style="flex: 0 0 48%;margin-top: 0;" value="Sign up" class="login__btn">
+						</div>
+						<p class="login__quest">Already have an account?</p>
+						<a href="#" class="login__forgot">Login</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="create" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Greate account <button data-close type="button" class="popup__close">+</button></div>
+				<div class="login__desc">Login to manage your account</div>
+				<div class="login__content">
+					<form action="" class="login__form">
+						<div class="login__group">
+							<label for="em">Email</label>
+							<input type="email" name="email" id="em" class="login__inp" placeholder="email@gmail.com">
+						</div>
+						<div class="login__group">
+							<label for="pa">Password</label>
+							<input type="passwoed" name="password" id="pa" class="login__inp" placeholder="*******">
+						</div>
+						<div class="login__group">
+							<label for="pa">Currence</label>
+							<select style="width: 100%; max-width: 100%" name="form[]" data-class-modif="form">
+								<option value="1" selected>USD</option>
+								<option value="2">UAH</option>
+								<option value="3">EUR</option>
+							</select>
+						</div>
+						<a href="#" data-popup="#full" class="login__btn login__bg">Next</a>
+						<p class="login__quest">Already have an account?</p>
+						<a href="#" class="login__forgot">Login</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/app.min.js?_v=20230119022353"></script>
 	<script>
 		function menu() {
 			document.querySelector('.menu').classList.toggle('_active');
