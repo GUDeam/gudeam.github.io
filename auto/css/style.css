@@ -395,7 +395,6 @@ body::after {
 
 .mobile {
   position: absolute;
-  width: 100%;
   height: 100%;
   background-color: #383F41;
   left: 100%;
@@ -719,7 +718,6 @@ body::after {
   left: 100%;
   top: 0;
   right: 0;
-  width: 100%;
   border: 0;
   -webkit-transition: left 0.3s;
   -o-transition: left 0.3s;
