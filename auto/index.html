@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230128105623">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230128133047">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
 							<a href="#" class="header__icon"><img src="img/social/twitter.svg" alt="twitter" class="header__icon-img"></a>
 							<a href="#" class="header__icon"><img src="img/social/d.svg" alt="d" class="header__icon-img"></a>
 						</div>
-						<div class="header__item">
+						<div class="header__item" data-da=".settings__content, 992, 2">
 							<a href="#" class="header__lang header__lang-active">Укр</a>
 							<a href="#" class="header__lang">Рус</a>
 						</div>
@@ -59,7 +59,7 @@
 				<div class="header__container">
 					<div class="header__main-content">
 						<a href="#" class="header__logo"><img src="img/logo.svg" alt="logotype" class="header__logo-img"></a>
-						<div class="header__contact">
+						<div class="header__contact" data-da=".settings__content, 992, 1">
 							<div class="header__phone">
 								<img src="img/phone.svg" alt="phone" class="header__phone-icon">
 								<a href="tel:+380964764550" class="header__phone-number">+38 (096) 476-4550</a>
@@ -77,31 +77,44 @@
 							<input type="text" name="search" id="search" class="header__search-inp" placeholder="Пошук за артикулом, наприклад ОС90">
 							<input type="submit" class="header__search-btn" value="Знайти">
 						</div>
-						<div class="header__cart">
+						<div class="header__cart" data-da=".settings__content, 992, 2">
 							<a href="#" class="header__cart-link">
 								<img src="img/cart.svg" alt="cart" class="header__cart-icon">
 								<p class="header__cart-title">Кошик</p>
 								<span class="header__cart-quantity">0</span>
 							</a>
 						</div>
+						<div class="header__flex">
+							<div class="header__set">
+								<picture><source srcset="img/settings.webp" type="image/webp"><img src="img/settings.png" alt="settings" class="header__settings"></picture>
+							</div>
+							<div class="header__menu menu" style="background-color: transparent;">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="" class="menu__link"></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="header__menu">
+			<div class="header__menu" data-da=".mobile, 992, 1">
 				<div class="header__container">
 					<div class="header__menu-content">
 						<nav>
 							<ul class="header__menu-nav">
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Запчастини для ТО</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Гальмівна система</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Підвіска та рульове</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Коробка передач</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Двигун та ходова</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Паливна система</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Вихлопна система</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Електрика та світло</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Кузовні елементи</a></li>
-								<li class="header__menu-item"><a href="#" class="header__menu-link">Охолодження та опалення</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Запчастини для ТО</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Гальмівна система</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Підвіска та рульове</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Коробка передач</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Двигун та ходова</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Паливна система</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Вихлопна система</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Електрика та світло</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Кузовні елементи</a></li>
+								<li class="header__menu-item"><a href="#" data-ripple class="header__menu-link">Охолодження та опалення</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -114,8 +127,9 @@
 					<div class="products__breadcrumbs"><a href="#" class="products__breadcrumbs-item">Головна</a> / <a href="#" class="products__breadcrumbs-item">Універсальні каталоги</a> / <a href="#" class="products__breadcrumbs-item">Оливний фільтр</a></div>
 					<p class="products__title title">Оливний фільтр</p>
 					<p class="products__desc">Інтернет-магазин пропонує оптових і розничних покупців <a href="#" class="products__desc-link">ознайомитися</a> з обширною каталожною базою: швидко підібрати і купити за вигідними цінами в Україні запчастини для ремонтного обслуговування автомобілів різних марок, моделей і років випуску.</p>
+					<a href="#" data-popup="#filter" class="products__mobile"><picture><source srcset="img/filter.webp" type="image/webp"><img src="img/filter.png" alt="filter" class="products__mobile-img"></picture> Фільтрація</a>
 					<div class="products__content">
-						<div class="products__filter">
+						<div class="products__filter" data-da=".filt, 992, 1">
 							<p class="products__filter-title">Фільтрація</p>
 							<div data-spollers class="spollers">
 								<div class="spollers__item">
@@ -426,7 +440,26 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230128105623"></script>
+	<div id="filter" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрити</button>
+				<div class="popup__text filt">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile">
+
+	</div>
+
+	<div class="settings">
+		<div class="settings__content">
+
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230128133047"></script>
 </body>
 
 </html>
