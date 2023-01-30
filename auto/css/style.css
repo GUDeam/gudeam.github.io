@@ -3097,6 +3097,29 @@ body::after {
   .garage__filter-title {
     margin-right: 3px;
   }
+
+  .tovar__main-img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .tovar__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 20px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+
+  .tovar__info-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 23.75em) {
