@@ -402,83 +402,340 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="result section">
-				<div class="result__container">
-					<div class="products__breadcrumbs"><a href="#" class="products__breadcrumbs-item">Головна</a> / <a href="#" class="products__breadcrumbs-item">Результати пошуку 1018</a></div>
-					<p class="result__title title">Результати пошуку</p>
-					<div class="result__content">
-						<div class="result__main">
-							<div class="result__main-group">
-								<p class="result__main-item">Бренд</p>
-								<p class="result__main-item">Артикул</p>
-								<p class="result__main-item">Назва</p>
-							</div>
-							<p class="result__main-item">Пошук</p>
-						</div>
-						<div class="result__search">
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">Airtex</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр</p>
+			<section class="change section">
+				<div class="change__container">
+					<!-- <div class="products__breadcrumbs"><a href="#" class="products__breadcrumbs-item">Головна</a> / <a href="#" class="products__breadcrumbs-item">Запчастини</a></div> -->
+					<p class="change__title title">Почніть з вибору автомобіля за наступними параметрами</p>
+					<div class="change__content">
+						<div data-tabs class="change-tab">
+							<nav data-tabs-titles class="change-tab__navigation">
+								<button type="button" class="change-tab__title _tab-active">За маркою авто</button>
+								<button type="button" class="change-tab__title">За VIN кодом</button>
+								<button type="button" class="change-tab__title">За держномером</button>
+							</nav>
+							<div data-tabs-body class="change-tab__content">
+								<div class="change-tab__body">
+									<div class="change__steps">
+										<div class="step1 change__steps-flex change__steps-active">
+											<p class="step__title">Марка</p>
+											<p class="step__num">1</p>
+										</div>
+										<div class="step2 change__steps-flex change__steps-active">
+											<p class="step__title">Модель</p>
+											<p class="step__num">2</p>
+										</div>
+										<div class="step3 change__steps-flex">
+											<p class="step__title">Рік випуску</p>
+											<p class="step__num">3</p>
+										</div>
+										<div class="step4 change__steps-flex">
+											<p class="step__title">Двигун</p>
+											<p class="step__num">4</p>
+										</div>
+										<div class="step5 change__steps-flex">
+											<p class="step__title">Модифікація</p>
+											<p class="step__num">5</p>
+										</div>
+									</div>
+									<form action="">
+										<div class="change__step01 sel">
+											<div class="change__step01-content">
+												<input type="radio" name="model" id="model1" class="change__inp" value="100">
+												<label for="model1">100</label>
+												<input type="radio" name="model" id="model2" class="change__inp" value="200">
+												<label for="model2">200</label>
+												<input type="radio" name="model" id="model3" class="change__inp" value="80">
+												<label for="model3">80</label>
+												<input type="radio" name="model" id="model4" class="change__inp" value="90">
+												<label for="model4">90</label>
+												<input type="radio" name="model" id="model5" class="change__inp" value="A1">
+												<label for="model5">A1</label>
+												<input type="radio" name="model" id="model6" class="change__inp" value="A2">
+												<label for="model6">A2</label>
+												<input type="radio" name="model" id="model7" class="change__inp" value="A3">
+												<label for="model7">A3</label>
+												<input type="radio" name="model" id="model8" class="change__inp" value="A4">
+												<label for="model8">A4</label>
+												<input type="radio" name="model" id="model9" class="change__inp" value="A5">
+												<label for="model9">A5</label>
+												<input type="radio" name="model" id="model10" class="change__inp" value="A6">
+												<label for="model10">A6</label>
+												<input type="radio" name="model" id="model11" class="change__inp" value="A7">
+												<label for="model11">A7</label>
+												<input type="radio" name="model" id="model12" class="change__inp" value="A8">
+												<label for="model12">A8</label>
+												<input type="radio" name="model" id="model13" class="change__inp" value="ALLROAD">
+												<label for="model13">ALLROAD</label>
+												<input type="radio" name="model" id="model14" class="change__inp" value="cabriolet">
+												<label for="model14">cabriolet</label>
+												<input type="radio" name="model" id="model15" class="change__inp" value="coupe">
+												<label for="model15">coupe</label>
+												<input type="radio" name="model" id="model16" class="change__inp" value="q3">
+												<label for="model16">q3</label>
+												<input type="radio" name="model" id="model17" class="change__inp" value="q5">
+												<label for="model17">q5</label>
+												<input type="radio" name="model" id="model18" class="change__inp" value="q7">
+												<label for="model18">q7</label>
+												<input type="radio" name="model" id="model19" class="change__inp" value="quattro">
+												<label for="model19">quattro</label>
+												<input type="radio" name="model" id="model20" class="change__inp" value="r8">
+												<label for="model20">r8</label>
+												<input type="radio" name="model" id="model21" class="change__inp" value="tt">
+												<label for="model21">tt</label>
+												<input type="radio" name="model" id="model22" class="change__inp" value="v8">
+												<label for="model22">v8</label>
+												<input type="radio" name="model" id="model23" class="change__inp" value="">
+												<label for="model23"></label>
+												<input type="radio" name="model" id="model24" class="change__inp" value="">
+												<label for="model24"></label>
+											</div>
+											<div class="change__step01-prop">
+												<p class="change__step01-title title">Ми пропонуємо запчастини до таких моделей Audi</p>
+												<div class="change__step01-grid">
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/100.webp" type="image/webp"><img src="img/audi/100.png" alt="100" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">100</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/200.webp" type="image/webp"><img src="img/audi/200.png" alt="200" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">200</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/80.webp" type="image/webp"><img src="img/audi/80.png" alt="80" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">80</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/90.webp" type="image/webp"><img src="img/audi/90.png" alt="90" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">90</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a1.webp" type="image/webp"><img src="img/audi/a1.png" alt="a1" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a1</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a2.webp" type="image/webp"><img src="img/audi/a2.png" alt="a2" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a2</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a3.webp" type="image/webp"><img src="img/audi/a3.png" alt="a3" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a3</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a4.webp" type="image/webp"><img src="img/audi/a4.png" alt="a4" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a4</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a5.webp" type="image/webp"><img src="img/audi/a5.png" alt="a5" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a5</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a6.webp" type="image/webp"><img src="img/audi/a6.png" alt="a6" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a6</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a7.webp" type="image/webp"><img src="img/audi/a7.png" alt="a7" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a7</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/a8.webp" type="image/webp"><img src="img/audi/a8.png" alt="a8" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">a8</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/allroad.webp" type="image/webp"><img src="img/audi/allroad.png" alt="allroad" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">allroad</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/cabriolet.webp" type="image/webp"><img src="img/audi/cabriolet.png" alt="cabriolet" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">cabriolet</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/coupe.webp" type="image/webp"><img src="img/audi/coupe.png" alt="coupe" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">coupe</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/q3.webp" type="image/webp"><img src="img/audi/q3.png" alt="q3" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">q3</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/q5.webp" type="image/webp"><img src="img/audi/q5.png" alt="q5" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">q5</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/q7.webp" type="image/webp"><img src="img/audi/q7.png" alt="q7" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">q7</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/quattro.webp" type="image/webp"><img src="img/audi/quattro.png" alt="quattro" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">quattro</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/r8.webp" type="image/webp"><img src="img/audi/r8.png" alt="r8" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">r8</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/tt.webp" type="image/webp"><img src="img/audi/tt.png" alt="tt" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">tt</p>
+													</div>
+													<div class="change__step01-item">
+														<picture><source srcset="img/audi/v8.webp" type="image/webp"><img src="img/audi/v8.png" alt="v8" class="change__step01-img"></picture>
+														<p class="change__step01-item-title">v8</p>
+													</div>
+												</div>
+											</div>
+											<div class="change__step01-auto01">
+												<p class="change__step01-auto01-title">Запчастини для ТО</p>
+												<div class="change__step01-auto01-content">
+													<div class="change__step01-auto01-item">
+														<p class="change__step01-auto01-tit">Автомобільні оливи</p>
+														<div class="change__step01-auto01-flex">
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+														</div>
+													</div>
+													<div class="change__step01-auto01-item">
+														<p class="change__step01-auto01-tit">Автомобільні оливи</p>
+														<div class="change__step01-auto01-flex">
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+														</div>
+													</div>
+													<div class="change__step01-auto01-item">
+														<p class="change__step01-auto01-tit">Автомобільні оливи</p>
+														<div class="change__step01-auto01-flex">
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+														</div>
+													</div>
+													<div class="change__step01-auto01-item">
+														<p class="change__step01-auto01-tit">Автомобільні оливи</p>
+														<div class="change__step01-auto01-flex">
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+															<div class="change__step01-auto01-product">
+																<picture><source srcset="img/" type="image/webp"><img src="img/" alt="" class="change__step01-auto01-img"></picture>
+																<p class="change__step01-auto01-desc">Фільтр салону</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
 								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
-							</div>
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">Brake Engineering</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр</p>
+
+								<div class="change-tab__body">
+									<div class="change-tab__cut">
+										<p class="change-tab__cut-title">Введіть VIN код свого автомобіля</p>
+										<input type="text" name="vincode" id="vincode" class="change-tab__inp" required>
+										<input type="submit" value="Знайти" class="change-tab__submit">
+									</div>
+									<!-- Полная форма поиска по vin коду -->
+									<div class="vinfull">
+										<div class="change-tab__title change__form-title" style="background-color: transparent;">Заповніть форму нижче і ми допоможемо вам у підборі необхідних запчастин</div>
+										<form action="" class="change-tab__form">
+											<input type="text" name="code" id="code" class="change-tab__inp" placeholder="VIN-код *" required>
+											<div class="change-tab__group">
+												<select name="form[]" data-class-modif="form">
+													<option value="1" selected>Марка *</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+												<select name="form[]" data-class-modif="form">
+													<option value="1" selected>Модель *</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+												<select name="form[]" data-class-modif="form">
+													<option value="1" selected>Модифікація *</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+												<select name="form[]" data-class-modif="form">
+													<option value="1" selected>Рік випуску *</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<textarea class="change-tab__textarea" name="mess" id="mess" cols="30" rows="10" placeholder="Які запчастини шукаєте? *"></textarea>
+											<input type="text" name="name" id="code" class="change-tab__inp" placeholder="Ваше ім’я *" required>
+											<input type="tel" name="phone" id="code" class="change-tab__inp" placeholder="Номер телефону *" required>
+											<input type="email" name="email" id="code" class="change-tab__inp" placeholder="Електронна пошта" required>
+											<input type="submit" value="Надіслати запит" class="change-tab__submit">
+										</form>
+									</div>
+									<!-- Конец полной формы поиска по vin коду -->
 								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
-							</div>
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">CDX</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр</p>
+								<div class="change-tab__body">
+									<div class="change-tab__gov">
+										<p class="change-tab__govtitle">Введіть держ. номер свого автомобіля</p>
+										<input type="text" name="gov" id="gov" class="change-tab__inp" required placeholder="KA1234AA">
+										<input type="submit" value="Знайти" class="change-tab__submit">
+									</div>
 								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
-							</div>
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">Gabriel</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр Opel Astra, Vectra, Omega</p>
-								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
-							</div>
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">Airtex</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр</p>
-								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
-							</div>
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">Airtex</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр</p>
-								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
-							</div>
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">Airtex</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр</p>
-								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
-							</div>
-							<div class="result__search-item">
-								<div class="result__search-group">
-									<p class="result__search-item">Airtex</p>
-									<p class="result__search-item">1018</p>
-									<p class="result__search-item">Оливний фільтр</p>
-								</div>
-								<a href="#" class="result__search-btn">Пошук</a>
 							</div>
 						</div>
 					</div>
@@ -492,6 +749,27 @@
 							<p class="support__desc">Залиште заявку! Підберемо за 10 хвилин</p>
 						</div>
 						<a href="#" data-ripple class="support__btn">Залишити заявку на підбір запчастин</a>
+					</div>
+				</div>
+			</section>
+			<section class="section text">
+				<div class="text__container">
+					<div class="text__content">
+						<p class="text__title" style="text-align: left;">Як правильно купити запчастини?</p>
+						<p class="text__desc">Інтернет-магазин пропонує оптових і розничних покупців ознайомитися з обширною каталожною базою: швидко підібрати і купити за вигідними цінами в Україні запчастини для ремонтного обслуговування автомобілів різних марок, моделей і років випуску. Представлені оригінальні автозапчастини та аналоги мають гарантовано високу якість: відмінний рівень важливих експлуатаційних характеристик підтверджується наявністю сертифікатів міжнародного класу. Додаткова захист споживачів – гарантія повернення (обмена) згідно з чинним законодавством України.</p>
+						<p class="text__title-small">Причини, з яких ми найкращі</p>
+						<ol>
+							<li>Інтернет магазин запрошує оптових та роздрібних покупців ознайомитися з великою каталожною базою</li>
+							<li>Представлені оригінальні автозапчастини та аналоги</li>
+						</ol>
+						<p class="text__title-small">Причини, з яких ми кращі, ніж найкращі</p>
+						<ul class="text__title-ul">
+							<li class="text__title-li">Інтернет магазин запрошує оптових та роздрібних покупців ознайомитися з великою каталожною базою</li>
+							<li class="text__title-li">Представлені оригінальні автозапчастини та аналоги</li>
+						</ul>
+						<p class="text__desc">Каталог пропозицій скомпонований та постійно поповнюється з урахуванням комплексної аналітики потреб українських автомобілістів у надійних автозапчастинах, а також сучасного ринку пропозицій. В асортименті представлені оригінальні деталі та аналоги як для ремонту популярних у країні європейських, азіатських та американських моделей, так і відмінні варіанти обслуговування рідкісних авто (легко можна купити традиційно дефіцитні позиції).</p>
+
+						<p class="text__desc">Досвід роботи дозволив детально вивчити особливості кожного виробника та компанії-пакувальника: від стабільності забезпечення необхідного рівня якості до цінової політики. У результаті каталог жорстко закрита дорога несумлінним фірмам (ризик купівлі низького гатунку і, тим більше підробки, зведений до нуля). Усі постачальники – компанії, які мають гарну репутацію на ринку, з якими (прямо чи через офіційних представників в Україні) налагоджені довгострокові партнерські зв'язки.</p>
 					</div>
 				</div>
 			</section>
@@ -568,6 +846,7 @@
 			</div>
 		</footer>
 	</div>
+
 	<div id="filter" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -597,6 +876,7 @@
 		//         })
 		//     });
 	</script>
+
 </body>
 
 </html>
