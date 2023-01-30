@@ -1149,6 +1149,7 @@ body::after {
 .products__breadcrumbs {
   color: #A2A9AC;
   font-size: 14px;
+  line-height: 18px;
 }
 
 .products__breadcrumbs-item {
@@ -2085,6 +2086,114 @@ body::after {
   color: #8DC63F;
 }
 
+.garage__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.garage__info {
+  background: #F2F2F2;
+  padding: 12px 13px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+}
+
+.garage__title {
+  font-size: 14px;
+  line-height: 16.59px;
+}
+
+.garage__desc {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.garage__btn {
+  padding: 21px 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #383F41;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.garage__select + .select__body .select__title {
+  background-color: #8DC63F;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  padding: 21px 22px;
+  text-align: left;
+}
+
+.garage__select + .select__body .select__title .select__value {
+  padding: 0;
+  gap: 84px;
+}
+
+.garage__select + .select__body .select__title .select__value::after {
+  content: url("../img/garage__arrow.svg");
+}
+
+.garage__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.garage__filter-title {
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 14px;
+}
+
+.garage__radio {
+  display: none;
+}
+
+.garage__radio:checked + label {
+  border: 1px solid #383F41;
+  background-color: #fff;
+}
+
+.garage__radio + label {
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 9px 16px;
+  border: 1px solid #fff;
+  background: #F2F2F2;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
 @media (min-width: 81.875em) {
   .result__main-group {
     gap: 12.8125rem;
@@ -2496,6 +2605,29 @@ body::after {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .garage__group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .garage__group .select .select__body .select__title {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .garage__group .select {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .garage__info {
+    border-radius: 0px 0px 0 8px;
+  }
+
+  .garage__btn {
+    border-radius: 0px 0px 8px 0px;
+  }
 }
 
 @media (max-width: 535px) {
@@ -2581,6 +2713,14 @@ body::after {
   .best__content {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .garage__btn {
+    padding: 21px;
+  }
+
+  .garage__filter-title {
+    margin-right: 3px;
   }
 }
 
