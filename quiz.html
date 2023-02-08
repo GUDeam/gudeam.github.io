@@ -30,6 +30,7 @@
         .product__step{
             opacity: 0;
             transition: all .3s;
+            display: none;
         }
 
         .active{
@@ -40,6 +41,19 @@
         .back{
             height: 100px;
             width: 30px;
+            display: none;
+        }
+        .parent{
+            width: 900px;
+            background-color: rgb(185, 185, 185);
+            height: 5px;
+            margin-top: 10px;
+        }
+        .child{
+            background-color: red;
+            width: 0;
+            height: 5px;
+            transition: width .3s;
         }
     </style>
 </head>
@@ -47,7 +61,7 @@
     Мой текст
     <div class="product__price">
         <div class="product__content">
-            <p class="product__step active">
+            <div class="product__step active" style="display: block;">
                 <label for="step01">№1</label>
                 <input type="radio" name="name" id="step01" class="product__radio">
                 <label for="step02">№2</label>
@@ -56,47 +70,124 @@
                 <input type="radio" name="name" id="step03" class="product__radio">
                 <label for="step04">№4</label>
                 <input type="radio" name="name" id="step04" class="product__radio">
-            </p>
-            <p class="product__step">
+            </div>
+            <div class="product__step">
                 <label for="step11">№01</label>
-                <input type="radio" name="name" id="step11" class="product__radio">
+                <input type="radio" name="firs" id="step11" class="product__radio">
                 <label for="step12">№02</label>
-                <input type="radio" name="name" id="step12" class="product__radio">
+                <input type="radio" name="firs" id="step12" class="product__radio">
                 <label for="step13">№03</label>
-                <input type="radio" name="name" id="step13" class="product__radio">
+                <input type="radio" name="firs" id="step13" class="product__radio">
                 <label for="step14">№04</label>
-                <input type="radio" name="name" id="step14" class="product__radio">
-            </p>
-            <p class="product__step">
+                <input type="radio" name="firs" id="step14" class="product__radio">
+            </div>
+            <div class="product__step">
                 <label for="step21">№001</label>
-                <input type="radio" name="name" id="step21" class="product__radio">
+                <input type="radio" name="adad" id="step21" class="product__radio">
                 <label for="step22">№002</label>
-                <input type="radio" name="name" id="step22" class="product__radio">
+                <input type="radio" name="adad" id="step22" class="product__radio">
                 <label for="step23">№003</label>
-                <input type="radio" name="name" id="step23" class="product__radio">
+                <input type="radio" name="adad" id="step23" class="product__radio">
                 <label for="step24">№004</label>
-                <input type="radio" name="name" id="step24" class="product__radio">
-            </p>
+                <input type="radio" name="adad" id="step24" class="product__radio">
+            </div>
+            <div class="product__step">
+                <label for="step31">№001</label>
+                <input type="radio" name="adsad" id="step31" class="product__radio">
+                <label for="step32">№002</label>
+                <input type="radio" name="adasd" id="step32" class="product__radio">
+                <label for="step33">№003</label>
+                <input type="radio" name="adsad" id="step33" class="product__radio">
+                <label for="step34">№004</label>
+                <input type="radio" name="adsad" id="step34" class="product__radio">
+            </div>
+            <div class="product__step">
+                <label for="step41">№001</label>
+                <input type="radio" name="addad" id="step41" class="product__radio">
+                <label for="step42">№002</label>
+                <input type="radio" name="addad" id="step42" class="product__radio">
+                <label for="step43">№003</label>
+                <input type="radio" name="addad" id="step43" class="product__radio">
+                <label for="step44">№004</label>
+                <input type="radio" name="addad" id="step44" class="product__radio">
+            </div>
+            <div class="product__step">
+                <label for="step51">№001</label>
+                <input type="radio" name="addad" id="step51" class="product__radio">
+                <label for="step52">№002</label>
+                <input type="radio" name="addad" id="step52" class="product__radio">
+                <label for="step53">№003</label>
+                <input type="radio" name="addad" id="step53" class="product__radio">
+                <label for="step54">№004</label>
+                <input type="radio" name="addad" id="step54" class="product__radio">
+            </div>
+            <div class="product__step">
+                <label for="step61">№001</label>
+                <input type="radio" name="addad" id="step61" class="product__radio">
+                <label for="step62">№002</label>
+                <input type="radio" name="addad" id="step62" class="product__radio">
+                <label for="step63">№003</label>
+                <input type="radio" name="addad" id="step63" class="product__radio">
+                <label for="step64">№004</label>
+                <input type="radio" name="addad" id="step64" class="product__radio">
+            </div>
+            <!-- <div class="product__step">
+                <label for="step71">№001</label>
+                <input type="radio" name="addad" id="step71" class="product__radio">
+                <label for="step72">№002</label>
+                <input type="radio" name="addad" id="step72" class="product__radio">
+                <label for="step73">№003</label>
+                <input type="radio" name="addad" id="step73" class="product__radio">
+                <label for="step74">№004</label>
+                <input type="radio" name="addad" id="step74" class="product__radio">
+            </div> -->
         </div>
         <button class="back">Back</button>
+        <div class="parent">
+            <div class="child"></div>
+            <div class="perc"><span>0</span> %</div>
+        </div>
     </div>
     <script>
         const back = document.querySelector('.back');
         const steps = document.querySelectorAll('.product__step');
+        let r = document.querySelector('.parent').getBoundingClientRect().width / steps.length;
+        let span = document.querySelector('span');
         steps.forEach(step => {
-            const inputs = step.querySelectorAll('.product__radio');
-                    back.addEventListener('click', () =>{
+                back.addEventListener('click', () =>{
+                    
+                    if (step.classList.contains('active')){
                         step.classList.remove('active');
+                        setTimeout(() => {
+                            step.style.display = 'none';
+                            step.previousElementSibling.style.display = 'block';
+                        }, 300);
                         step.previousElementSibling.classList.add('active');
-                    })
+                    }
+                    if (steps[0].classList.contains('active')) {
+                        back.style.display = 'none';
+                    } else {
+                        back.style.display = 'block';
+                    }
+                });
+            const inputs = step.querySelectorAll('.product__radio');
             inputs.forEach(input => {
-                input.addEventListener('click', () =>{
+                input.addEventListener('change', () =>{
+                    span.innerText = Number(span.innerText) + 100 / steps.length;
+                    let s = document.querySelector('.child').style.width = document.querySelector('.child').getBoundingClientRect().width + r + 'px';
+                    back.style.display = 'block';
                     step.classList.remove('active');
+                    setTimeout(() => {
+                        step.style.display = 'none';
+                        step.nextElementSibling.style.display = 'block';
+                    }, 300);
                     step.nextElementSibling.classList.add('active');
                 })
             });
         });
-        
+        back.addEventListener('click', () =>{
+            let s = document.querySelector('.child').style.width = document.querySelector('.child').getBoundingClientRect().width - r + 'px';
+        });
     </script>
 </body>
 </html>
