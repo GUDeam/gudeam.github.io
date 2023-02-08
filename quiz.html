@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .product__price{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        } */
+        .product__content{
+            background-color: green;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            color: #fff;
+            
+        }
+        .product__step{
+            display: none;
+            height: 0;
+            transition: visibility .3s, height .3s;
+        }
+
+        .active{
+            display: block;
+            transition: visibility .3s, height .3s;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    Мой текст
+    <div class="product__price">
+        <div class="product__content">
+            <p class="product__step active">
+                <label for="step01">№1</label>
+                <input type="radio" name="name" id="step01" class="product__radio">
+                <label for="step02">№2</label>
+                <input type="radio" name="name" id="step02" class="product__radio">
+                <label for="step03">№3</label>
+                <input type="radio" name="name" id="step03" class="product__radio">
+                <label for="step04">№4</label>
+                <input type="radio" name="name" id="step04" class="product__radio">
+            </p>
+            <p class="product__step">
+                <label for="step11">№01</label>
+                <input type="radio" name="name" id="step11" class="product__radio">
+                <label for="step12">№02</label>
+                <input type="radio" name="name" id="step12" class="product__radio">
+                <label for="step13">№03</label>
+                <input type="radio" name="name" id="step13" class="product__radio">
+                <label for="step14">№04</label>
+                <input type="radio" name="name" id="step14" class="product__radio">
+            </p>
+            <p class="product__step">
+                <label for="step21">№001</label>
+                <input type="radio" name="name" id="step21" class="product__radio">
+                <label for="step22">№002</label>
+                <input type="radio" name="name" id="step22" class="product__radio">
+                <label for="step23">№003</label>
+                <input type="radio" name="name" id="step23" class="product__radio">
+                <label for="step24">№004</label>
+                <input type="radio" name="name" id="step24" class="product__radio">
+            </p>
+        </div>
+    </div>
+    <script>
+        const steps = document.querySelectorAll('.product__step');
+        steps.forEach(step => {
+            const inputs = step.querySelectorAll('.product__radio');
+            inputs.forEach(input => {
+                input.addEventListener('click', () =>{
+                    step.classList.remove('active');
+                    step.nextElementSibling.classList.add('active');
+                })
+            });
+        });
+    </script>
+</body>
+</html>
