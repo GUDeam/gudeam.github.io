@@ -28,15 +28,18 @@
             
         }
         .product__step{
-            display: none;
-            height: 0;
-            transition: visibility .3s, height .3s;
+            opacity: 0;
+            transition: all .3s;
         }
 
         .active{
-            display: block;
-            transition: visibility .3s, height .3s;
-            height: 100%;
+            opacity: 1;
+            transition: all .3s;
+        }
+
+        .back{
+            height: 100px;
+            width: 30px;
         }
     </style>
 </head>
@@ -75,11 +78,17 @@
                 <input type="radio" name="name" id="step24" class="product__radio">
             </p>
         </div>
+        <button class="back">Back</button>
     </div>
     <script>
+        const back = document.querySelector('.back');
         const steps = document.querySelectorAll('.product__step');
         steps.forEach(step => {
             const inputs = step.querySelectorAll('.product__radio');
+                    back.addEventListener('click', () =>{
+                        step.classList.remove('active');
+                        step.previousElementSibling.classList.add('active');
+                    })
             inputs.forEach(input => {
                 input.addEventListener('click', () =>{
                     step.classList.remove('active');
@@ -87,6 +96,7 @@
                 })
             });
         });
+        
     </script>
 </body>
 </html>
