@@ -3790,6 +3790,7 @@
             observer: true,
             observeParents: true,
             slidesPerView: 1.5,
+            centeredSlides: true,
             spaceBetween: 35,
             speed: 800,
             loop: true,

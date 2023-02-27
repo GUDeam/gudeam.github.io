@@ -1059,6 +1059,8 @@ body {
   .news__slider {
     display: block;
     padding: 10px 0;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
   }
 
   .news__content {
