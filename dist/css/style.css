@@ -69,6 +69,11 @@ h6 {
   font-size: inherit;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -1042,7 +1047,7 @@ h6 {
 
 @media (max-width: 1200px) {
   .main {
-    background-image: none;
+    background-image: none !important;
     max-width: 100%;
     padding: 100px 0;
   }
@@ -1221,7 +1226,7 @@ h6 {
   }
 
   .about {
-    background-image: none;
+    background-image: none !important;
   }
 
   .about__content {
