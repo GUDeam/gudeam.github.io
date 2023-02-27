@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230118023947">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230227145844">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,87 +15,342 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__container">
+			<div class="header__wrapper">
 				<div class="header__content">
-					<img src="img/logo.svg" alt="Logotype" class="header__logo">
 					<div class="header__item">
-						<div class="header__icons">
-							<a href="#" class="header__link"><img src="img/telegram.svg" alt="Telegram" class="header__soc"></a>
-							<a href="#" class="header__link"><img src="img/whatsapp.svg" alt="WhatsApp" class="header__soc"></a>
-							<a href="#" class="header__link"><img src="img/mess.svg" alt="Messenger" class="header__soc"></a>
-							<a href="#" class="header__link"><img src="img/viber.svg" alt="Viber" class="header__soc"></a>
+						<a href="/" class="header__logo"><img src="img/logo.svg" alt="Логотип" class="header__logo-img"></a>
+						<ul class="header__nav" data-da=".menu__body, 992, 1">
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Про нас</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Курси</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Статті</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Контакти</a></li>
+						</ul>
+					</div>
+					<div class="header__item" data-da=".menu__body, 992, 2">
+						<input type="text" class="header__search">
+						<div class="sel" data-da=".header__nav, 992, 5">
+							<select name="form[]" data-class-modif="form">
+								<option value="1" selected>Укр</option>
+								<option value="2">Eng</option>
+							</select>
 						</div>
-						<div class="header__contact">
-							<a href="tel:+79261921111" class="header__phone">+7 926 192 11 11</a>
-							<a href="mailto:advocat.avg@gmail.com" class="header__email">advocat.avg@gmail.com</a>
-						</div>
+						<a href="#" class="header__login">Вхід</a>
+						<a href="#" class="header__register">Реєстрація</a>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+
+						</nav>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main class="page">
-			<div class="main">
-				<div class="main__container">
+			<section class="main section">
+				<picture><source srcset="img/mob.webp" type="image/webp"><img src="img/mob.png" alt="mobile" class="main__mobile"></picture>
+				<div class="main__wrapper">
 					<div class="main__content">
-						<div class="main__flex">
-							<p class="main__title">Всем <br>кто уехал</p>
-							<div class="da"></div>
-							<a href="#" class="main__btn" data-popup="#popup">Заказать консультацию</a>
-						</div>
-						<p class="main__desc" data-da=".da, 992, 1">Индивидуальные условия сотрудничества с каждым Клиентом обсудим лично или по телефону</p>
-					</div>
-					<div class="main__info">
 						<div class="main__item">
-							<div class="main__item-title">Решение Ваших миграционных вопросов и легализация Вашего пребывания вне РФ</div>
-							<div class="main__item-desc">Не знаете где поселиться и какие нужны документы, ПОМОЖЕМ!</div>
-						</div>
-						<div class="main__item">
-							<div class="main__item-title">Представление Ваших интересов в судах, службе судебных приставов и любых иных госорганах РФ</div>
-							<div class="main__item-desc">Нужна юридическая помощь, ПОМОЖЕМ!</div>
-						</div>
-						<div class="main__item">
-							<div class="main__item-title">Доверительное управление Вашими активами на территории РФ</div>
-							<div class="main__item-desc">Профессионально и надежно</div>
+							<img src="img/dots.svg" alt="dots" class="main__dots">
+							<h1 class="main__title">Викладання та навчання - легко, разом з Etutor</h1>
+							<p class="main__desc">Знайдіть своє життєве покликання разом з нами. Обирайте програму навчання, університет, школу, проходьте онлайн-навчання та отримуйте задоволення від роботи кожен день!</p>
+							<div class="main__soc">
+								<a href="#" class="main__soc-link"><img src="img/Facebook.svg" alt="facebook" class="main__soc-img"></a>
+								<a href="#" class="main__soc-link"><img src="img/Instagram.svg" alt="instagram" class="main__soc-img"></a>
+								<a href="#" class="main__soc-link"><img src="img/LinkedIN.svg" alt="LinkedIN" class="main__soc-img"></a>
+							</div>
+							<img src="img/dots.svg" alt="dots" class="main__dots non">
+							<div class="main__copy">
+								<p class="main__copy-text">© "Etutor s. r. o". Всі права захищені. Czech Republic, Prague, Na Folimance 2155 / 15, Vinohrady, 120 00 Prague 2. Ідентифікаційний номер: 24751286</p>
+								<a href="https://makarenkostudio.com/"><img src="img/create.svg" alt="copy" class="main__copy-img"></a>
+							</div>
 						</div>
 						<div class="main__item">
-							<div class="main__item-title">Представительские и консалтинговые услуги в РФ, Европе, Турции и Израиле</div>
-							<!-- <div class="main__item-desc">Не знаете где поселиться и какие нужны документы, ПОМОЖЕМ!</div> -->
+							<picture><source srcset="img/people.webp" type="image/webp"><img src="img/people.png" alt="people" class="main__img"></picture>
 						</div>
-					</div>
-					<img src="img/money.svg" alt="Money" class="main__money">
-				</div>
-				<img src="img/plane.svg" alt="Plane" class="plane">
-				<div class="main__container">
-					<div class="header__icons" style="display: none;padding-bottom: 50px;position: relative;z-index: 99;">
-						<a href="#" class="header__link"><img src="img/telegram.svg" alt="Telegram" class="header__soc"></a>
-						<a href="#" class="header__link"><img src="img/whatsapp.svg" alt="WhatsApp" class="header__soc"></a>
-						<a href="#" class="header__link"><img src="img/mess.svg" alt="Messenger" class="header__soc"></a>
-						<a href="#" class="header__link"><img src="img/viber.svg" alt="Viber" class="header__soc"></a>
 					</div>
 				</div>
-			</div>
+			</section>
+			<section class="section about">
+				<picture><source srcset="img/ab__mobile.webp" type="image/webp"><img src="img/ab__mobile.png" alt="mobile" class="main__mobile"></picture>
+				<div class="about__wrapper">
+					<div class="about__top">
+						<img src="img/dots.svg" alt="dots" class="about__dots">
+					</div>
+					<div class="about__content">
+						<div class="about__item">
+							<h1 class="about__title">Про нас</h1>
+							<p class="about__desc">Etutor – це освітня платформа, яка надає навчання в різних сферах. Наші основні сфери: мистецтво та дизайн, програмування, бізнес та продажі, іноземні мови, ігри, музика, фінанси, медицина та наука, політика та право, здоров’я та спорт. Ми спілкуємося з широкою мережею професіоналів у галузі освіти та допомагаємо знайти можливості. А також ми надаємо доступ до освітніх і наукових статей для підвищення якості освіти в усьому світі. До нас приходять як бажаючі здобути нову професію чи «прокачати» вже наявні знання, так і бажаючі підвищити кваліфікацію. Одним із ключових показників нашої роботи є відсоток працевлаштованих студентів. Щоб цей показник був максимально високим, ми запрошуємо до складу викладачів лише практикуючих спеціалістів із кращих ІТ-компаній, підбираємо корисні відеоматеріали та максимально комфортно організовуємо навчальний процес.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preim section">
+				<div class="preim__container">
+					<h1 class="preim__title">Наші переваги</h1>
+					<p class="preim__desc">З кожним роком ми продовжуємо розвиватися та впроваджувати інновації у навчання.</p>
+					<hr>
+					<div class="preim__content">
+						<div class="preim__item" data-watch data-watch-once data-watch-threshold="0.7">
+							<img src="img/preim.svg" alt="preim" class="preim__img">
+							<p class="preim__text">Викладачі практики</p>
+						</div>
+						<div class="preim__item" data-watch data-watch-once data-watch-threshold="0.7">
+							<img src="img/preim.svg" alt="preim" class="preim__img">
+							<p class="preim__text">Служба підтримки студентів</p>
+						</div>
+						<div class="preim__item" data-watch data-watch-once data-watch-threshold="0.7">
+							<img src="img/preim.svg" alt="preim" class="preim__img">
+							<p class="preim__text">Практичні і теоретичний заняття</p>
+						</div>
+						<div class="preim__item" data-watch data-watch-once data-watch-threshold="0.7">
+							<img src="img/preim.svg" alt="preim" class="preim__img">
+							<p class="preim__text">Розумна платформа</p>
+						</div>
+						<div class="preim__item" data-watch data-watch-once data-watch-threshold="0.7">
+							<img src="img/preim.svg" alt="preim" class="preim__img">
+							<p class="preim__text">100% гарантія задоволення</p>
+						</div>
+						<div class="preim__item" data-watch data-watch-once data-watch-threshold="0.7">
+							<img src="img/preim.svg" alt="preim" class="preim__img">
+							<p class="preim__text">Доступ до відеозаписів занять</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section curs">
+				<div class="curs__container">
+					<h1 class="curs__title">Наші курси</h1>
+					<div class="curs__content">
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__1.webp" type="image/webp"><img src="img/item__1.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Графічний дизайн</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__2.webp" type="image/webp"><img src="img/item__2.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">UX / UI дизайн</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__3.webp" type="image/webp"><img src="img/item__3.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Моушн дизайн</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__4.webp" type="image/webp"><img src="img/item__4.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Курс Front-end</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__5.webp" type="image/webp"><img src="img/item__5.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Основи програмування</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__6.webp" type="image/webp"><img src="img/item__6.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Курс Java</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__7.webp" type="image/webp"><img src="img/item__7.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">JavaScript</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__8.webp" type="image/webp"><img src="img/item__8.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Маркетинг</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__9.webp" type="image/webp"><img src="img/item__9.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Менеджмент</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__10.webp" type="image/webp"><img src="img/item__10.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Курс IT продажі</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__11.webp" type="image/webp"><img src="img/item__11.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Тестування QA</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="curs__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__12.webp" type="image/webp"><img src="img/item__12.png" alt="item" class="curs__img"></picture>
+							<div class="curs__flex">
+								<p class="curs__item-title">Курси для дітей</p>
+								<a href="#" class="curs__btn">Докладніше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section news">
+				<div class="news__container">
+					<h1 class="news__title">Статті</h1>
+					<div class="news__content">
+						<div class="news__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__13.webp" type="image/webp"><img src="img/item__13.png" alt="item" class="news__img"></picture>
+							<div class="news__flex">
+								<p class="news__item-title">Розробка сайту та лендінг</p>
+								<a href="#" class="news__btn">Читати</a>
+							</div>
+						</div>
+						<div class="news__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__14.webp" type="image/webp"><img src="img/item__14.png" alt="item" class="news__img"></picture>
+							<div class="news__flex">
+								<p class="news__item-title">Створення логотипу</p>
+								<a href="#" class="news__btn">Читати</a>
+							</div>
+						</div>
+						<div class="news__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__15.webp" type="image/webp"><img src="img/item__15.png" alt="item" class="news__img"></picture>
+							<div class="news__flex">
+								<p class="news__item-title">Розробка додатків на Android, IOS та кроссплатформи </p>
+								<a href="#" class="news__btn">Читати</a>
+							</div>
+						</div>
+						<div class="news__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__16.webp" type="image/webp"><img src="img/item__16.png" alt="item" class="news__img"></picture>
+							<div class="news__flex">
+								<p class="news__item-title">Розробка гайдлайна</p>
+								<a href="#" class="news__btn">Читати</a>
+							</div>
+						</div>
+						<div class="news__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__17.webp" type="image/webp"><img src="img/item__17.png" alt="item" class="news__img"></picture>
+							<div class="news__flex">
+								<p class="news__item-title">Коли потрібно замовити ребрендінг?</p>
+								<a href="#" class="news__btn">Читати</a>
+							</div>
+						</div>
+						<div class="news__item" data-watch data-watch-once data-watch-threshold="0.3">
+							<picture><source srcset="img/item__18.webp" type="image/webp"><img src="img/item__18.png" alt="item" class="news__img"></picture>
+							<div class="news__flex">
+								<p class="news__item-title">Що таке брендбук?</p>
+								<a href="#" class="news__btn">Читати</a>
+							</div>
+						</div>
+					</div>
+					<div class="news__slider swiper">
+						<div class="news__wrapper swiper-wrapper">
+							<div class="news__slide swiper-slide">
+								<div class="news__item">
+									<picture><source srcset="img/item__13.webp" type="image/webp"><img src="img/item__13.png" alt="item" class="news__img"></picture>
+									<div class="news__flex">
+										<p class="news__item-title">Розробка сайту та лендінг</p>
+										<a href="#" class="news__btn">Читати</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__slide swiper-slide">
+								<div class="news__item">
+									<picture><source srcset="img/item__14.webp" type="image/webp"><img src="img/item__14.png" alt="item" class="news__img"></picture>
+									<div class="news__flex">
+										<p class="news__item-title">Створення логотипу</p>
+										<a href="#" class="news__btn">Читати</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__slide swiper-slide">
+								<div class="news__item">
+									<picture><source srcset="img/item__15.webp" type="image/webp"><img src="img/item__15.png" alt="item" class="news__img"></picture>
+									<div class="news__flex">
+										<p class="news__item-title">Розробка додатків на Android, IOS та кроссплатформи</p>
+										<a href="#" class="news__btn">Читати</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__slide swiper-slide">
+								<div class="news__item">
+									<picture><source srcset="img/item__16.webp" type="image/webp"><img src="img/item__16.png" alt="item" class="news__img"></picture>
+									<div class="news__flex">
+										<p class="news__item-title">Розробка гайдлайна</p>
+										<a href="#" class="news__btn">Читати</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__slide swiper-slide">
+								<div class="news__item">
+									<picture><source srcset="img/item__17.webp" type="image/webp"><img src="img/item__17.png" alt="item" class="news__img"></picture>
+									<div class="news__flex">
+										<p class="news__item-title">Коли потрібно замовити ребрендінг?</p>
+										<a href="#" class="news__btn">Читати</a>
+									</div>
+								</div>
+							</div>
+							<div class="news__slide swiper-slide">
+								<div class="news__item">
+									<picture><source srcset="img/item__18.webp" type="image/webp"><img src="img/item__18.png" alt="item" class="news__img"></picture>
+									<div class="news__flex">
+										<p class="news__item-title">Що таке брендбук?</p>
+										<a href="#" class="news__btn">Читати</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="news__showmore">Читати всі</a>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__soc">
+						<a href="#" class="footer__soc-link"><img src="img/facebook_footer.svg" alt="facebook" class="footer__soc-img"></a>
+						<a href="#" class="footer__soc-link"><img src="img/instagram_footer.svg" alt="instagram" class="footer__soc-img"></a>
+						<a href="#" class="footer__soc-link"><img src="img/linkedIn_footer.svg" alt="LinkedIN" class="footer__soc-img"></a>
+					</div>
+					<div class="footer__main">
+						<div class="footer__item">
+							<p class="footer__title">For questions or a partnership request you can write to us here:</p>
+							<a href="mailto:hello@etutor.space" class="footer__email">hello@etutor.space</a>
+						</div>
+						<div class="footer__item">
+							<p class="footer__title">For support questions:</p>
+							<a href="mailto:support@etutor.space" class="footer__email">support@etutor.space</a>
+						</div>
+						<div class="footer__item">
+							<p class="footer__title">For publication or ordering an article:</p>
+							<a href="mailto:support@etutor.space" class="footer__email">support@etutor.space</a>
+						</div>
+						<div class="footer__item">
+							<p class="footer__title">Website developed:</p>
+							<img src="img/create_footer.svg" alt="create" class="footer__create">
+						</div>
+					</div>
+					<p class="footer__copy">© "Etutor s. r. o". All rights reserved. Czech Republic, Prague, Na Folimance 2155 / 15, Vinohrady, 120 00 Prague 2. Identification number: 24751286</p>
+				</div>
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close"></button>
-				<div class="popup__title">Оставьте заявку</div>
-				<div class="popup__text">
-					<form action="send.php" method="POST" class="popup__form">
-						<input type="text" name="name" id="name" class="popup__inp" placeholder="Ваш контакт" required>
-						<textarea name="mess" id="mess" cols="30" rows="10" placeholder="Опишите Ваш вопрос или задачу" class="popup__mess"></textarea>
-						<input type="submit" value="Отправить" class="popup__btn">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/app.min.js?_v=20230118023947"></script>
+	<script src="js/app.min.js?_v=20230227145844"></script>
 </body>
 
 </html>
